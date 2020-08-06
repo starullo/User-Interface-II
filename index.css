@@ -19,6 +19,7 @@ header {
     height: 27vh;
     background-color: #065535;
     margin-bottom: 2%;
+    margin-top: 0;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 
 h1 {
     font-size: 8rem;
-    margin: 2% 2%;
+    margin: 0 2% 2% 2%;
     font-family: lobster;
     letter-spacing: 4px;
     color: white;
@@ -51,6 +52,13 @@ header nav a {
     font-size: 2rem;
     border-radius: 10px;
     letter-spacing: 3px;
+    transition-property: letter-spacing;
+    transition-delay: 50ms;
+    transition-duration: 600ms;
+}
+
+header nav a:hover {
+    letter-spacing: 8px;
 }
 
 section {
@@ -85,9 +93,16 @@ section img  {
     text-decoration: none;
     color: #CEF9C2;
     background-color: #065535;
-    width: 30%;
+    width: 37%;
     padding: 1.9%;
     border-radius: 10px;
+    transition-property: letter-spacing;
+    transition-delay: 50ms;
+    transition-duration: 600ms;
+}
+
+.name a:hover {
+    letter-spacing: 8px;
 }
 
 .name p {
@@ -113,7 +128,7 @@ main {
     width: 80%;
 }
 
-.flexbox p {
+.flexbox div a p {
     letter-spacing: 3px;
 }
 
@@ -147,6 +162,25 @@ footer nav a {
     text-decoration: none;
     padding: .5% 0%;
     border-radius: 10px;
-    width: 15%;
+    width: 20%;
     letter-spacing: 3px;
+    transition-property: letter-spacing;
+    transition-delay: 50ms;
+    transition-duration: 600ms;
 }
+
+footer nav a:hover {
+    letter-spacing: 8px;
+}
+
+.hidden {
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 50ms;
+    transition-duration: 600ms;
+}
+
+.flexbox:hover .hidden {
+    opacity: 1;
+}
+
