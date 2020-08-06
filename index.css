@@ -31,7 +31,7 @@ h1 {
     margin: 0 2% 2% 2%;
     font-family: lobster;
     letter-spacing: 4px;
-    color: white;
+    color: #CEF9C2;
 }
 
 header nav {
@@ -177,7 +177,7 @@ footer nav a:hover {
     opacity: 0;
     transition-property: opacity;
     transition-delay: 50ms;
-    transition-duration: 600ms;
+    transition-duration: 800ms;
 }
 
 .flexbox:hover .hidden {
