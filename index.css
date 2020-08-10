@@ -196,6 +196,7 @@ footer nav a:hover {
         margin: 0 auto;
         letter-spacing: 5px;
     }
+
     header nav {
         margin: 3.5% auto;
         justify-content: space-between;
@@ -233,19 +234,11 @@ footer nav a:hover {
     }
     
     .name h2 {
-        letter-spacing: 4px;
-        font-family: lobster;
-        color: #065535;
-        margin: 3% auto;
-        font-size: 6rem;
         display: none;
     }
     
     .name a {
-        display: inline-block;
         letter-spacing: 8px;
-        text-align: center;
-        text-decoration: none;
         color: #CEF9C2;
         background-color: #065535;
         width: 37%;
@@ -318,6 +311,105 @@ footer nav a:hover {
         width: 40%;
         letter-spacing: 8px;
     }
+}
 
+/* CSS for mobile */
+
+@media (max-width: 500px) {
+
+    header {
+        text-align: center;
+        height: 38vh;
     }
 
+    h1 {
+        width: 75%;
+        font-size: 5rem;
+        margin: 0 auto;
+        letter-spacing: 5px;
+        padding-top: 4%;
+    }
+
+    header nav {
+        margin: 1% auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    header nav a {
+        letter-spacing: 1px;
+        width: 75%;
+        margin: 4% auto;
+        padding: 2%;
+    }
+
+    header nav a:last-of-type {
+        background-color:#CEF9C2;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        letter-spacing: 1px;
+    }
+
+    .name h2 {
+        font-size: 5rem;
+        display: block;
+    }
+
+    .name a {
+        width: 60%;
+    }
+
+    .name p {
+        line-height: 3.5rem;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: space-evenly;
+        height: 120vh;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .flexbox {
+        width: 48%;
+        text-align: center;
+        margin: 0% auto;
+    }
+
+    .flexbox img {
+        width: 92%;
+    }
+
+    .flexbox  p {
+        letter-spacing: 5px;
+        font-size: 2rem;
+    }
+
+    footer nav {
+        text-align: center;
+        width: 100%;
+        display: flex;
+    }
+
+    footer {
+        height: 20vh;
+    }
+
+    footer p {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    footer nav a {
+        padding: 1%;
+        width: 47%;
+        letter-spacing: 1.5px;
+    }
+}
