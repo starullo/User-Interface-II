@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Tarullo's Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link href="index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="sr-only" href="#main">Go to main content</a>
     <header>
         <h1>Sam Tarullo</h1>
         <nav>
@@ -24,12 +25,12 @@
         <div class="name">
             <h2>Sam Tarullo</h2>
             <a target="_blank" href="projects.html">My Projects</a>
-            <p>I'm new to the world of computer programming, but I love it so 
+            <p tabindex="0">I'm new to the world of computer programming, but I love it so 
                 far. Come follow me along on my journey to being a web developer. 
                 Check out my projects below!</p>
         </div>
     </section>
-    <main>
+    <main id="main">
         <div class="flexbox">
             <a href="#"><img src="images/dog.jpg" alt="Adorable dog wrapped in a blanket"></a>
             <p><span class="hidden">&lt;</span>Dog Webpage<span class="hidden">/&gt;</span></p>
@@ -67,7 +68,7 @@
         <p>({Let's collaborate!})</p>
         <nav>
         <a target="_blank" href="contact.html">CONTACT ME</a>
-        <a target="_blank" href="https://www.linkedin.com/in/sam-tarullo-84a1871b1/">MY LINKEDIN PAGE</a>
+        <a target="_blank" href="https://www.linkedin.com/in/sam-tarullo-84a1871b1/">LINKEDIN</a>
         </nav>
     </footer>
 </body>
